@@ -2,5 +2,23 @@
     "name": "S-CSS-P",
     "version": "1.0",
     "description": "A stylesheet picker for The SCP Wiki",
-    "manifest_version": 2
+    "manifest_version": 2,
+	"permissions": [
+		"storage",
+		"http://*.scp-wiki.net/",
+		"http://scp-wiki.wikidot.com/",
+		"https://*.scp-wiki.net/",
+		"https://scp-wiki.wikidot.com/"
+	],
+	"content_scripts": [
+		{
+		"matches": ["http://*.scp-wiki.net/*","http://scp-wiki.wikidot.com/*","https://*.scp-wiki.net/*","https://scp-wiki.wikidot.com/*"],
+		"js": ["main.js"],
+		"all_frames": true,
+		"run_at": "document_start"
+		}
+	],
+	"web_accessible_resources": ["/css/*"],
+	"options_page": "options.html"
+	
   }

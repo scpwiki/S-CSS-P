@@ -1,0 +1,99 @@
+#header
+{
+  background:url(http://www.scp-wiki.net/local--files/component:theme/logo.png) 10px 40px no-repeat;
+}
+
+a.avatar-hover,a.avatar-hover:hover
+{
+  background-image:url(../images/background/opacity2.png);
+}
+
+.wait-block
+{
+  background-image:url(../images/progress/progresscircle.gif);
+}
+
+.wait-icon
+{
+  background-image:url(http://www.napyfab.com/ajax-indicators/images/indicator_medium.gif);
+}
+
+.wait-progress
+{
+  background-image:url(../images/progress/progressbar.gif);
+}
+
+.yui-navset .yui-nav a,.yui-navset .yui-navset-top .yui-nav a
+{
+  background:#d8d8d8 url(../../../common--javascript/yahooui/assets/sprite.png) repeat-x;
+  background-image:url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png);
+}
+
+.yui-navset .yui-nav .selected a,.yui-navset .yui-nav .selected a:focus,/* no focus effect for selected */
+.yui-navset .yui-nav .selected a:hover
+{
+  background:#700 url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1400px;
+}
+
+.yui-navset .yui-nav a:hover,.yui-navset .yui-nav a:focus
+{
+  background:#d88 url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1300px;
+}
+
+.yui-navset-left .yui-nav a,.yui-navset-left .yui-nav .selected a,.yui-navset-left .yui-nav a:hover,.yui-navset-right .yui-nav a,.yui-navset-right .yui-nav .selected a,.yui-navset-right .yui-nav a:hover,.yui-navset-bottom .yui-nav a,.yui-navset-bottom .yui-nav .selected a,.yui-navset-bottom .yui-nav a:hover
+{
+  background-image:none;
+}
+
+.wd-editor-toolbar-panel a
+{
+  background-image:url(../images/editor/icons1.png);
+}
+
+.wd-editor-toolbar-panel a:hover
+{
+  background-image:url(../images/editor/icons3.png);
+}
+
+.owindow.owait .content
+{
+  background-image:url(../images/progress/progressbar.gif);
+}
+
+#navi-bar
+{
+  background-image:url(../../../common--theme/base/images/shade2_n.png);
+}
+
+#navi-bar a.logo
+{
+  background-image:url(../../../common--images/navibar/logo20.png);
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='scale',src='../../../common--images/navibar/logo20.png');
+}
+
+.wikidot-hybrid-module-loading
+{
+  background:no-repeat center center url(../images/progress/progressbar.gif);
+}
+
+div#container-wrap
+{
+  background:url(http://www.scp-wiki.net/local--files/component:theme/body_bg.png) top left repeat-x;
+}
+
+#side-bar .collapsible-block-folded
+{
+  background:url(http://www.scp-wiki.net/local--files/nav:side/expand.png) 0 2px no-repeat;
+}
+
+.content-panel .panel-body
+{
+  background:#fff9f0 url(http://www.scp-wiki.net/local--files/component:theme/panel-bg-gradient-reverse.png) bottom repeat-x;
+}
+
+@media screen and -ms-high-contrast active,-ms-high-contrast none {
+  .emph
+  {
+    background-image:url(http://www.scp-wiki.net/local--files/component%3Atheme/dot.png), none;
+  }
+}
