@@ -1,0 +1,415 @@
+/*
+@import url('https://fontlibrary.org/face/fira-sans');
+@import url('https://fontlibrary.org/face/dejavu-sans-mono');
+@import url('https://fontlibrary.org/face/dejavu-sans');
+@import url('https://fontlibrary.org/face/junction');
+@import url('https://fontlibrary.org/face/comphand');
+*/
+
+@font-face
+{
+  font-family: 'JunctionRegular';
+    src: url('https://fontlibrary.org/assets/fonts/junction/f99fa7793abd572cc4e202f8cafa1a28/5bafad23431ca285a292e7404c923437/JunctionRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'DejaVuSansBold';
+    src: url('https://fontlibrary.org/assets/fonts/dejavu-sans/f5ec8426554a3a67ebcdd39f9c3fee83/21546d802d508f3d358082d85bc0d9f1/DejaVuSansBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'DejaVuSansBoldOblique';
+    src: url('https://fontlibrary.org/assets/fonts/dejavu-sans/f5ec8426554a3a67ebcdd39f9c3fee83/e5947ee873600dd1cae20e30cf80ee68/DejaVuSansBoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'DejaVuSansBook';
+    src: url('https://fontlibrary.org/assets/fonts/dejavu-sans/f5ec8426554a3a67ebcdd39f9c3fee83/49c0f03ec2fa354df7002bcb6331e106/DejaVuSansBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'DejaVuSansCondensed';
+    src: url('https://fontlibrary.org/assets/fonts/dejavu-sans/f5ec8426554a3a67ebcdd39f9c3fee83/deed2dec8b2a429759183d4ce25ccd39/DejaVuSansCondensed.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'DejaVuSansCondensedBold';
+src: url('https://fontlibrary.org/assets/fonts/dejavu-sans/f5ec8426554a3a67ebcdd39f9c3fee83/f05d91a4bf97b24878103a3cdf8787d0/DejaVuSansCondensedBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'DejaVuSansCondensedBoldOblique';
+    src: url('https://fontlibrary.org/assets/fonts/dejavu-sans/f5ec8426554a3a67ebcdd39f9c3fee83/d5e8cfd6145aec5c1c6059484c896b88/DejaVuSansCondensedBoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'DejaVuSansCondensedOblique';
+    src: url('https://fontlibrary.org/assets/fonts/dejavu-sans/f5ec8426554a3a67ebcdd39f9c3fee83/01fef11654a41d40b5aa1d9564eeb16f/DejaVuSansCondensedOblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'DejaVuSansExtraLight';
+    src: url('https://fontlibrary.org/assets/fonts/dejavu-sans/f5ec8426554a3a67ebcdd39f9c3fee83/5213563f6868aea7a7b5dd9ab2581ec9/DejaVuSansExtraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'DejaVuSansOblique';
+    src: url('https://fontlibrary.org/assets/fonts/dejavu-sans/f5ec8426554a3a67ebcdd39f9c3fee83/8723fc16d3649200d6179f391dd43f9f/DejaVuSansOblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'DejaVuSansMonoBold';
+        src: url('https://fontlibrary.org/assets/fonts/dejavu-sans-mono/774383913ac3d625c49b1fec99e0784d/fb4ec87d51ddbe7c5d2f9e8f09d7e39f/DejaVuSansMonoBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'DejaVuSansMonoBoldOblique';
+        src: url('https://fontlibrary.org/assets/fonts/dejavu-sans-mono/774383913ac3d625c49b1fec99e0784d/ca84e5775e93e87fbedadbd01dcd971f/DejaVuSansMonoBoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'DejaVuSansMonoBook';
+        src: url('https://fontlibrary.org/assets/fonts/dejavu-sans-mono/774383913ac3d625c49b1fec99e0784d/f7435b1a6cda778779e08965547ece79/DejaVuSansMonoBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'DejaVuSansMonoOblique';
+        src: url('https://fontlibrary.org/assets/fonts/dejavu-sans-mono/774383913ac3d625c49b1fec99e0784d/a6927e438ac0588663bf935ec83844e2/DejaVuSansMonoOblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansBold';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/6b7b274cdb71fed31a3ab00827a091d6/FiraSansBold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansBoldItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/ff1a4e814429997d468ccf5cae66bc9f/FiraSansBoldItalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansBook';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/9e29124adafe2cc4fc881e7eaed5def6/FiraSansBook.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansBookItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/774bbb46a64a14d157f8bb2ff15fb282/FiraSansBookItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansEight';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/fd288e0d2b4881f44e4d6375b8be7ad2/FiraSansEight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansEightItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/9cc6329e17015e641c79b81feb429141/FiraSansEightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansExtraBold';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/f990272b514f87a7dde50bfda439036f/FiraSansExtraBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansExtraBoldItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/a52b745600af467eeb4cbf505fc70c8e/FiraSansExtraBoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansExtraLight';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/7c111c819173c9e340e71cb53b38f614/FiraSansExtraLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansExtraLightItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/bcc4f71d5c0e032bbbb13e4f61aec8a2/FiraSansExtraLightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansFour';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/15301f88db6f1caa6c1b5d856b0e58c9/FiraSansFour.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansFourItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/329f1977b820ee62c0bc66e4846d7c87/FiraSansFourItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansHair';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/0669da4191410057e761bfd16826f9b5/FiraSansHair.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansHairItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/e40d777d7beb3b70eada8bf5e3f95291/FiraSansHairItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansHeavy';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/ef4267472f8676897aaeb5be0a520479/FiraSansHeavy.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansHeavyItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/2fe1f0b70cea02b424a3871b88593671/FiraSansHeavyItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/9ae15b27cb0856cac6e422932211091f/FiraSansItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansLight';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/a35b04a47658272244d456dd1cbfeb66/FiraSansLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansLightItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/3e380267a8088e9c58dbcf224c9f3945/FiraSansLightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansMedium';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/825e43772be29d80b02fe39500a19bee/FiraSansMedium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansMediumItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/718bac96ea652141d2a71ca39cff056a/FiraSansMediumItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansRegular';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/e7988865e2e32f23de6205effcc3a95d/FiraSansRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansSemiBold';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/67cf35fead4c694f9ff5b0aeace739bc/FiraSansSemiBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansSemiBoldItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/e904c88d03ab5ad3186d6b51e70b4fbe/FiraSansSemiBoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansThin';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/67e24104f6c230f03e3287627a114f61/FiraSansThin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansThinItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/77a1f120b8837770c527bf60c3a1d0d9/FiraSansThinItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansTwo';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/c7deae98d2f4a41335667a4b7634e334/FiraSansTwo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansTwoItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/e91dc81ea87ca40a59f5819b219be058/FiraSansTwoItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansUltra';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/9f476ae6949f2a1deead9739407b64c8/FiraSansUltra.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansUltraItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/bb013237bec40f286e1490aaccf1efff/FiraSansUltraItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+  font-family: 'FiraSansUltraLight';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/40af8ad9d2e4e0e8563733dd0b4366bc/FiraSansUltraLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'FiraSansUltraLightItalic';
+        src: url('https://fontlibrary.org/assets/fonts/fira-sans/2bb3cdfc4ee05959be169778ced73de9/ed1fe2615489d522b1be14400340401a/FiraSansUltraLightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+  #page-title, body
+  {
+    font-family: "Fira Sans", "DejaVu Sans Condensed", verdana, arial, helvetica, sans-serif !important;
+  }
+  
+    #page-title
+  {
+    font-family: "Junction", "Fira Sans", "DejaVu Sans Condensed", verdana, arial, helvetica, sans-serif !important;
+  }
+  
+  @-moz-document url-prefix("http://ferryfm13.thirteen.axc.nl/scp/timers/getTimer.php") {
+
+body{
+  font-family: "DejaVu Sans Condensed", verdana, arial, helvetica, sans-serif !important;
+}
+
+  }
+  
+  @-moz-document regexp("https?:\/\/scp-wiki\.wdfiles\.com\/local--html\/main\/b1d22cc85b51d15945223af54b75485a71d34523-492106717175458516\/.*scp-wiki\.net\/"),
+  regexp("https?:\/\/scp-wiki\.wdfiles\.com\/local--html\/main\/b1d22cc85b51d15945223af54b75485a71d34523-492106717175458516\/.*scp-wiki\.wikidot\.com\/"),
+  regexp("https?:\/\/scpsandbox2\.wdfiles\.com\/local--html\/start\/b1d22cc85b51d15945223af54b75485a71d34523-4930967401480709276\/.*scpsandbox2\.wikidot\.com\/")
+{
+  body
+  {
+    font-family: "Fira Sans", "DejaVu Sans Condensed", verdana, arial, helvetica, sans-serif;
+  }
+}
+
+@-moz-document regexp("https?:\/\/scp-wiki\.wdfiles\.com\/local--html\/search.*scp-wiki\.net\/"),
+               regexp("https?:\/\/scp-wiki\.wdfiles\.com\/local--html\/search.*scp-wiki\.wikidot\.com\/"),
+               regexp("https?:\/\/scp-wiki\.wdfiles\.com\/local--html\/search.*scpsandbox2\.wikidot\.com\/")
+{
+
+  body
+  {
+    font-family: "DejaVu Sans Condensed", verdana, arial, helvetica, sans-serif !important;
+  }
+  
+}
