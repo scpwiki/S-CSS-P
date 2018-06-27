@@ -19,15 +19,15 @@ Choose Layout Set:
 </td>
 <td align="center">
  <img src="/img/layout/nosidebar.png"><br>
- <input type="radio" name="layout" id="night" value="nosidebar" /><br><label for="night">No Sidebar<br>by bluesoul</label>
+ <input type="radio" name="layout" id="nosidebar" value="nosidebar" /><br><label for="nosidebar">No Sidebar<br>by bluesoul</label>
  </td>
 <td align="center">
  <img src="/img/layout/immersive.png"><br>
- <input type="radio" name="layout" id="minimal" value="minimal" /><br><label for="minimal">Immersive Mode<br>by bluesoul</label>
+ <input type="radio" name="layout" id="immersive" value="immersive" /><br><label for="immersive">Immersive Mode<br>by bluesoul</label>
  </td>
 <td align="center">
- <img src="/img/color/matrix.png"><br>
- <input type="radio" name="layout" id="matrix" value="matrix" /><br><label for="matrix">Black and Green<br>by bluesoul</label>
+ <img src="/img/layout/fullwidth.png"><br>
+ <input type="radio" name="layout" id="fluid" value="fluid" /><br><label for="fluid">Fluid Width<br>by bluesoul</label>
 </td>
 </tr>
 <tr>
@@ -38,7 +38,7 @@ Choose Color Pallette:
 <tr>
 <td align="center">
  <img src="/img/no.png"><br>
- <input type="radio" name="color" id="none" value="none" /><br><label for="none">No layout override.<br>Uses site layout instructions.</label>
+ <input type="radio" name="color" id="none" value="none" /><br><label for="none">No layout override.<br>Uses site color pallette.</label>
 </td>
 <td align="center">
  <img src="/img/layout/sigma9.png"><br>
@@ -57,20 +57,33 @@ Choose Color Pallette:
  <input type="radio" name="color" id="matrix" value="matrix" /><br><label for="matrix">Black and Green<br>by bluesoul</label>
 </td>
 </tr>
-
-Choose Image Pack:
-<select id="images">
- <option value="none">No theme override.</option>
- <option value="sigma9">The Sigma9 Theme</option>
-</select>
-
+<tr>
+<td>
 Choose Logo:
-<select id="logo">
- <option value="none">No logo override.</option>
- <option value="default">Default SCP Logo</option>
- <option value="pride">SCP Pride Logo</option>
- <option value="inverted">Inverted Default Logo</option>
-</select>
+</td>
+</tr>
+<tr>
+<td align="center">
+ <img src="/img/no.png" width=100 height=100><br>
+ <input type="radio" name="logo" id="none" value="none" /><br><label for="none">No logo override.<br>Uses site logo.</label>
+</td>
+<td align="center">
+ <img src="/img/logo/default.png"><br>
+ <input type="radio" name="logo" id="default" value="default" /><br><label for="default">Default Logo<br>by Far2</label>
+</td>
+<td align="center">
+ <img src="/img/logo/inverted.png"><br>
+ <input type="radio" name="logo" id="inverted" value="inverted" /><br><label for="inverted">Inverted Logo<br>by Far2</label>
+ </td>
+<td align="center">
+ <img src="/img/logo/pride.png"><br>
+ <input type="radio" name="logo" id="pride" value="pride" /><br><label for="pride">Pride Logo<br>by ???</label>
+ </td>
+<td align="center">
+ <img src="/img/logo/pride2.th.png"><br>
+ <input type="radio" name="logo" id="pride2" value="pride2" /><br><label for="pride2">Alternate Pride Logo<br>by /u/BigIfData</label>
+</td>
+</tr>
 
 <div id="status"></div>
 <button id="save">Save</button>

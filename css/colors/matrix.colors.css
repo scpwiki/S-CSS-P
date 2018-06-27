@@ -1,0 +1,369 @@
+/* Tag Level Overrides */
+
+body {
+color:#2a0;
+font-family: "Source Code Pro", "Courier New", "courier", "monospace";
+background-color: #000;
+}
+
+p {
+color:#2a0;
+font-family: "Source Code Pro", "Courier New", "courier", "monospace";
+}
+
+a {	color: #cfb }
+
+blockquote {
+	border: 1px dashed #2a0;
+	background-color: #000;
+}
+
+hr { background-color: #2a0; }
+
+/* ID Level Overrides */
+
+#login-status {
+	color: #2a0;
+}
+
+#login-status a {
+	color: #cfb;
+}
+
+#login-status ul a {
+	color: #cfb;
+}
+
+#account-options {
+	background-color: #000;
+	border: 1px solid #2a0;
+}
+
+#account-options li a:hover {
+	color: #cfb;
+}
+
+#side-bar p {
+color:#2a0;
+}
+
+div#container-wrap {
+background-color:#000 !important;
+background: url()
+}
+
+#header h1 a {
+	color: #2a0;
+	font-family: "Source Code Pro", "Courier New", "courier", "monospace";
+}
+	
+#header h2 span {
+	color: #2a0;
+	font-family: "Source Code Pro", "Courier New", "courier", "monospace";
+}
+
+#search-top-box-input {
+	background-color: #000;
+	border: solid 1px #2a0;
+	font-family: "Source Code Pro", "Courier New", "courier", "monospace";
+}
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+	border: solid 1px #2a0;
+	color: #2a0;
+	background-color: #000;
+	box-shadow: inset 1px 1px 3px rgba(0,0,0,.8);
+	font-family: "Source Code Pro", "Courier New", "courier", "monospace";
+}
+
+#search-top-box-form input[type=submit] {
+	border: solid 1px #2a0;
+	color: #cfb;
+	background-color: #2a0;
+	background: none;
+	font-family: "Source Code Pro", "Courier New", "courier", "monospace";
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+	border: solid 1px #2a0;
+	color: #2a0;
+	text-shadow: 0 0 1px rgba(255,255,255,.25)
+	background-color: #cfb;
+	background: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,.8);
+}
+#top-bar a {
+	color: #cfb;
+}
+
+#top-bar ul li.sfhover a, #top-bar ul li:hover a {
+	background: #000;
+	color: #2a0;
+	border: 0;
+}
+
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+	border-top: 0;
+}
+
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+	background: #000;
+	color: #cfb;
+	text-decoration: none;
+}
+
+#side-bar .side-block {
+	background: transparent !important;
+	border: 1px solid #2a0;
+}
+
+#side-bar .heading {
+	border-bottom: solid 1px #060;
+}
+
+#side-bar div.menu-item .sub-text {
+	color: #2a0;
+}
+
+/* Replacing images. This could break. Don't try it at home. */
+#side-bar div.menu-item img[src*="http://scp-wiki.wdfiles.com/local--files/nav%3Aside/home.png"] {
+	background-image: url("http://bluesoul.me/scp/matrix/home.png");
+	width: 13px;
+	
+	display:inline-block;
+    padding: 13px 0 0 0;
+    height: 0px !important;
+
+    /* for IE 5.5's bad box model */
+    height /**/:13px;
+}
+
+#side-bar div.menu-item img[src*="http://scp-wiki.wdfiles.com/local--files/nav%3Aside/default.png"] {
+	background-image: url("http://bluesoul.me/scp/matrix/default.png");
+	width: 13px;
+	
+	display:inline-block;
+    padding: 13px 0 0 0;
+    height: 0px !important;
+
+    /* for IE 5.5's bad box model */
+    height /**/:13px;
+}
+
+#side-bar div.menu-item img[src*="http://scp-wiki.wdfiles.com/local--files/nav%3Aside/forum.png"] {
+	background-image: url("http://bluesoul.me/scp/matrix/forum.png");
+	width: 13px;
+	
+	display:inline-block;
+    padding: 13px 0 0 0;
+    height: 0px !important;
+
+    /* for IE 5.5's bad box model */
+    height /**/:13px;
+}
+
+#side-bar div.menu-item img[src*="http://scp-wiki.wdfiles.com/local--files/nav%3Aside/help.png"] {
+	background-image: url("http://bluesoul.me/scp/matrix/help.png");
+	width: 13px;
+	
+	display:inline-block;
+    padding: 13px 0 0 0;
+    height: 0px !important;
+
+    /* for IE 5.5's bad box model */
+    height /**/:13px;
+}
+
+#side-bar div.menu-item img[src*="http://scp-wiki.wdfiles.com/local--files/nav%3Aside/main.png"] {
+	background-image: url("http://bluesoul.me/scp/matrix/main.png");
+	width: 13px;
+	
+	display:inline-block;
+    padding: 13px 0 0 0;
+    height: 0px !important;
+
+    /* for IE 5.5's bad box model */
+    height /**/:13px;
+}
+
+#side-bar div.menu-item img[src*="http://scp-wiki.wdfiles.com/local--files/nav%3Aside/series.png"] {
+	background-image: url("http://bluesoul.me/scp/matrix/series.png");
+	width: 13px;
+	
+	display:inline-block;
+    padding: 13px 0 0 0;
+    height: 0px !important;
+
+    /* for IE 5.5's bad box model */
+    height /**/:13px;
+}
+
+h1, #page-title {
+	color: #2a0;
+}
+
+#page-title {
+	border-bottom: 1px solid #2a0;
+}
+
+#toc {
+	background-color: #000;
+	border: 1px dashed #2a0;
+}
+
+#footer {
+	background: #000;
+	color: #2a0;
+}
+
+#footer a { color: #cfb; }
+
+#license-area { color: #2a0; }
+
+/* Class Level Overrides */
+
+.scp-image-block {
+	border: solid 1px #2a0;
+}
+
+.scp-image-block .scp-image-caption {
+	background-color: #000;
+	border-top: solid 1px #2a0;
+}
+
+.content-panel {
+	background-color: #000;
+	box-shadow: none;
+	border: solid 1px #2a0;
+}
+
+.content-panel .content-type-title {
+	background-color: #000;
+	box-shadow: none;
+	
+}
+
+.content-panel.standalone {
+	background-color: #000;
+}
+
+.content-panel .content-toc {
+	background-color: #000;
+	border: solid 1px #2a0;
+}
+
+.content-panel .panel-body {
+	background: none;
+}
+
+.content-panel .panel-footer a {
+	color: #cfb;
+}
+
+.pager .current {
+	background-color: #000;
+	color: #2a0;
+	border: 1px solid #2a0;
+}
+
+.pager a {
+	border: 1px solid #cfb;
+}
+
+.page-tags span { border-top: 1px solid #2a0; }
+
+/* Interwiki IFrame */
+
+.international-entry:nth-child(even), .alternate:nth-child(even) {
+	background-color: transparent;
+	border-top: solid 1px #2a0;
+	border-bottom: solid 1px #2a0;
+}
+
+.interwiki {
+	border: 1px solid #2a0;
+	background: transparent;
+	box-shadow: none;
+}
+
+.interwiki__title {
+	color: #2a0;
+	border-bottom: solid 1px #060;
+}
+
+.interwiki__entry a {
+	color: #cfb;
+}
+
+.interwiki__entry:before {
+	color: #2a0;
+}
+
+/* Heritage Collection */
+
+.heritage-rating-module {
+	background-color: #000;
+}
+
+/* Rating block */
+
+.page-rate-widget-box .rate-points {
+	background-color: #000 !important;
+	border: solid 1px #2a0;
+	color: #2a0;
+}
+
+.page-rate-widget-box .rateup, .page-rate-widget-box .ratedown, .page-rate-widget-box .cancel {
+    background-color: #000;
+    border: solid 1px #2a0;
+    font-weight: bold;
+}
+
+.page-rate-widget-box .rateup a, .page-rate-widget-box .ratedown a, .page-rate-widget-box .cancel a {
+    color: #2a0;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover,
+.page-rate-widget-box .cancel a:hover {
+	background: #000;
+	color: #cfb;
+	text-decoration: underline;
+}
+
+/* YUI Overrides */
+
+.yui-navset .yui-nav {
+	border-color: #2a0;
+}
+
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+	background-color: #000;
+	color: #cfb;
+	border: 1px solid #cfb;
+	background-image: url();
+}
+
+.yui-navset .yui-nav a:hover, .yui-navset .yui-nav a:focus {
+    background: #000 url();
+    text-decoration: none;
+	
+}
+
+.yui-navset .yui-content {
+	background-color: #000;
+	border: 1px solid #2a0;
+}
+
+.yui-navset .yui-nav .selected a, 
+.yui-navset .yui-nav .selected a:focus, 
+.yui-navset .yui-nav .selected a:hover, 
+.yui-navset .yui-nav .selected a em{
+    background: #000;
+    color: #2a0;
+	border-color: #2a0;
+}

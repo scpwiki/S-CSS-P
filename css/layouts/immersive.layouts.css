@@ -1,0 +1,27 @@
+div#container-wrap {
+	background: none !important;
+}
+
+#header {
+	display: none; 
+}
+
+#side-bar {
+	display: none;
+}
+
+#main-content .page-tags {
+	display: none;
+}
+
+#page-options-container {
+	display: none;
+}
+
+#footer {
+	display: none !important;
+}
+
+#license-area {
+	display: none;
+}

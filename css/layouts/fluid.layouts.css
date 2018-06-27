@@ -1,0 +1,11 @@
+#header, #top-bar {
+	max-width: none;
+}
+#content-wrap {
+	max-height: none;
+	max-width: none;
+}
+#footer {
+	display: none !important;
+	visibility: hidden;
+}

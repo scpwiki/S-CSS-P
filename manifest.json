@@ -8,14 +8,15 @@
 		"http://*.scp-wiki.net/",
 		"http://scp-wiki.wikidot.com/",
 		"https://*.scp-wiki.net/",
-		"https://scp-wiki.wikidot.com/"
+		"https://scp-wiki.wikidot.com/",
+		"http://scpnet.org/"
 	],
 	"content_scripts": [
 		{
-		"matches": ["http://*.scp-wiki.net/*","http://scp-wiki.wikidot.com/*","https://*.scp-wiki.net/*","https://scp-wiki.wikidot.com/*"],
+		"matches": ["http://*.scp-wiki.net/*","http://scp-wiki.wikidot.com/*","https://*.scp-wiki.net/*","https://scp-wiki.wikidot.com/*", "http://scpnet.org/*"],
 		"js": ["main.js"],
 		"all_frames": true,
-		"run_at": "document_start"
+		"run_at": "document_idle"
 		}
 	],
 	"web_accessible_resources": ["/css/*", "/img/*"],
