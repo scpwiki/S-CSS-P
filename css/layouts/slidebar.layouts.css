@@ -1,0 +1,96 @@
+div#side-bar
+  {
+    position: fixed;
+    left: 0;
+  }
+
+  .open-menu
+  {
+    display: none;
+  }
+
+  div#side-bar
+  {
+    position: fixed;
+    margin-left: -20em;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 0;
+    width: 17em;
+    display: block !important;
+    z-index: 10;
+    transition-duration: 1s;
+  }
+
+  div#side-bar:before
+  {
+    position: fixed;
+    height: 90px;
+    width: 90px;
+    content: '>';
+    font-size: 20px;
+    text-align: center;
+    text-indent: 33px;
+    line-height: 90px;
+    top: 50%;
+    margin-top: -45px;
+    left: -45px;
+    border-radius: 45px;
+    transition-duration: 1s;
+  }
+
+  div#side-bar:hover
+  {
+    position: fixed;
+    margin-left: 0;
+    left: 0 !important;
+  }
+
+  div#side-bar:hover:before
+  {
+    transition-delay: 1s;
+    margin-left: -900px;
+  }
+
+  #side-bar .side-block
+  {
+    border-radius: unset;
+    border: none;
+    margin: 0;
+  }
+
+  #side-bar .heading,#side-bar .collapsible-block-unfolded-link
+  {
+    font-weight: bold;
+    font-size: 11pt;
+    text-align: center;
+    margin: 1.5em 0 0;
+    padding: 0;
+  }
+
+  #side-bar .collapsible-block-unfolded-link a.collapsible-block-link
+  {
+    font-weight: bold;
+    font-size: 11pt;
+  }
+
+  #side-bar .menu-item
+  {
+    line-height: 2em;
+  }
+
+  #side-bar .sub-text
+  {
+    display: none;
+  }
+
+  #side-bar .menu-item img
+  {
+    display: none;
+  }
+
+  #side-bar>hr
+  {
+    display: none;
+  }
