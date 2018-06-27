@@ -1,120 +1,120 @@
 /* Tag Level Overrides */
 
 body {
-color:#2a0;
+color:#bcc;
 
-background-color: #000;
+background-color: #123;
 }
 
 p {
-color:#2a0;
+color:#bcc;
 
 }
 
-a {	color: #cfb }
+a {	color: #7db }
 
 blockquote {
-	border: 1px dashed #2a0;
-	background-color: #000;
+	border: 1px dashed #bcc;
+	background-color: #123;
 }
 
-hr { background-color: #2a0; }
+hr { background-color: #bcc; }
 
 select {
-	color:#2a0;
+	color:#bcc;
 	
-	background-color: #000;
-	border: 1px solid #2a0;
+	background-color: #123;
+	border: 1px solid #bcc;
 }
 
 input {
-	color:#2a0;
+	color:#bcc;
 	
-	background-color: #000;
-	border: 1px solid #2a0;
+	background-color: #123;
+	border: 1px solid #bcc;
 }
 
 /* ID Level Overrides */
 
 #login-status {
-	color: #2a0;
+	color: #bcc;
 }
 
 #login-status a {
-	color: #cfb;
+	color: #7db;
 }
 
 #login-status ul a {
-	color: #cfb;
+	color: #7db;
 }
 
 #account-options {
-	background-color: #000;
-	border: 1px solid #2a0;
+	background-color: #123;
+	border: 1px solid #bcc;
 }
 
 #account-options li a:hover {
-	color: #cfb;
+	color: #7db;
 }
 
 #side-bar p {
-color:#2a0;
+color:#bcc;
 }
 
 div#container-wrap {
-background-color:#000 !important;
+background-color:#123 !important;
 background: url()
 }
 
 #header h1 a {
-	color: #2a0;
+	color: #bcc;
 	
 }
 	
 #header h2 span {
-	color: #2a0;
+	color: #bcc;
 	
 }
 
 #search-top-box-input {
-	background-color: #000;
-	border: solid 1px #2a0;
+	background-color: #123;
+	border: solid 1px #bcc;
 	
 }
 
 #search-top-box-input:hover,
 #search-top-box-input:focus {
-	border: solid 1px #2a0;
-	color: #2a0;
-	background-color: #000;
+	border: solid 1px #bcc;
+	color: #bcc;
+	background-color: #123;
 	box-shadow: inset 1px 1px 3px rgba(0,0,0,.8);
 	
 }
 
 #search-top-box-form input[type=submit] {
-	border: solid 1px #2a0;
-	color: #cfb;
-	background-color: #2a0;
+	border: solid 1px #bcc;
+	color: #7db;
+	background-color: #bcc;
 	background: none;
 	
 }
 
 #search-top-box-form input[type=submit]:hover,
 #search-top-box-form input[type=submit]:focus {
-	border: solid 1px #2a0;
-	color: #2a0;
+	border: solid 1px #bcc;
+	color: #bcc;
 	text-shadow: 0 0 1px rgba(255,255,255,.25)
-	background-color: #cfb;
+	background-color: #7db;
 	background: none;
 	box-shadow: 0 1px 3px rgba(0,0,0,.8);
 }
 #top-bar a {
-	color: #cfb;
+	color: #7db;
 }
 
 #top-bar ul li.sfhover a, #top-bar ul li:hover a {
-	background: #000;
-	color: #2a0;
+	background: #123;
+	color: #bcc;
 	border: 0;
 }
 
@@ -125,22 +125,22 @@ background: url()
 
 #top-bar ul li.sfhover a:hover,
 #top-bar ul li:hover a:hover {
-	background: #000;
-	color: #cfb;
+	background: #123;
+	color: #7db;
 	text-decoration: none;
 }
 
 #side-bar .side-block {
 	background: transparent !important;
-	border: 1px solid #2a0;
+	border: 1px solid #bcc;
 }
 
 #side-bar .heading {
-	border-bottom: solid 1px #060;
+	border-bottom: solid 1px #bcc;
 }
 
 #side-bar div.menu-item .sub-text {
-	color: #2a0;
+	color: #bcc;
 }
 
 /* Replacing images. This could break. Don't try it at home. */
@@ -217,57 +217,57 @@ background: url()
 }
 
 h1, #page-title {
-	color: #2a0;
+	color: #bcc;
 }
 
 #page-title {
-	border-bottom: 1px solid #2a0;
+	border-bottom: 1px solid #bcc;
 }
 
 #toc {
-	background-color: #000;
-	border: 1px dashed #2a0;
+	background-color: #123;
+	border: 1px dashed #bcc;
 }
 
 #footer {
-	background: #000;
-	color: #2a0;
+	background: #123;
+	color: #bcc;
 }
 
-#footer a { color: #cfb; }
+#footer a { color: #7db; }
 
-#license-area { color: #2a0; }
+#license-area { color: #bcc; }
 
 /* Class Level Overrides */
 
 .scp-image-block {
-	border: solid 1px #2a0;
+	border: solid 1px #bcc;
 }
 
 .scp-image-block .scp-image-caption {
-	background-color: #000;
-	border-top: solid 1px #2a0;
+	background-color: #123;
+	border-top: solid 1px #bcc;
 }
 
 .content-panel {
-	background-color: #000;
+	background-color: #123;
 	box-shadow: none;
-	border: solid 1px #2a0;
+	border: solid 1px #bcc;
 }
 
 .content-panel .content-type-title {
-	background-color: #000;
+	background-color: #123;
 	box-shadow: none;
 	
 }
 
 .content-panel.standalone {
-	background-color: #000;
+	background-color: #123;
 }
 
 .content-panel .content-toc {
-	background-color: #000;
-	border: solid 1px #2a0;
+	background-color: #123;
+	border: solid 1px #bcc;
 }
 
 .content-panel .panel-body {
@@ -275,136 +275,136 @@ h1, #page-title {
 }
 
 .content-panel .panel-footer a {
-	color: #cfb;
+	color: #7db;
 }
 
 .pager .current {
-	background-color: #000;
-	color: #2a0;
-	border: 1px solid #2a0;
+	background-color: #123;
+	color: #bcc;
+	border: 1px solid #bcc;
 }
 
 .pager a {
-	border: 1px solid #cfb;
+	border: 1px solid #7db;
 }
 
-.page-tags span { border-top: 1px solid #2a0; }
+.page-tags span { border-top: 1px solid #bcc; }
 
 table.wiki-content-table th {
-	background-color: #000;
-	border: 1px solid #2a0;
+	background-color: #123;
+	border: 1px solid #bcc;
 }
 
 table.wiki-content-table td {
-	border: 1px solid #2a0;
+	border: 1px solid #bcc;
 }
 
 /* Interwiki IFrame */
 
 .international-entry:nth-child(even), .alternate:nth-child(even) {
 	background-color: transparent;
-	border-top: solid 1px #2a0;
-	border-bottom: solid 1px #2a0;
+	border-top: solid 1px #bcc;
+	border-bottom: solid 1px #bcc;
 }
 
 .interwiki {
-	border: 1px solid #2a0;
+	border: 1px solid #bcc;
 	background: transparent;
 	box-shadow: none;
 }
 
 .interwiki__title {
-	color: #2a0;
-	border-bottom: solid 1px #060;
+	color: #bcc;
+	border-bottom: solid 1px #bcc;
 }
 
 .interwiki__entry a {
-	color: #cfb;
+	color: #7db;
 }
 
 .interwiki__entry:before {
-	color: #2a0;
+	color: #bcc;
 }
 
 /* Heritage Collection */
 
 .heritage-rating-module {
-	background-color: #000;
+	background-color: #123;
 }
 
 /* Rating block */
 
 .page-rate-widget-box .rate-points {
-	background-color: #000 !important;
-	border: solid 1px #2a0;
-	color: #2a0;
+	background-color: #123 !important;
+	border: solid 1px #bcc;
+	color: #bcc;
 }
 
 .page-rate-widget-box .rateup, .page-rate-widget-box .ratedown, .page-rate-widget-box .cancel {
-    background-color: #000;
-    border: solid 1px #2a0;
+    background-color: #123;
+    border: solid 1px #bcc;
     font-weight: bold;
 }
 
 .page-rate-widget-box .rateup a, .page-rate-widget-box .ratedown a, .page-rate-widget-box .cancel a {
-    color: #2a0;
+    color: #bcc;
 }
 
 .page-rate-widget-box .rateup a:hover,
 .page-rate-widget-box .ratedown a:hover,
 .page-rate-widget-box .cancel a:hover {
-	background: #000;
-	color: #cfb;
+	background: #123;
+	color: #7db;
 	text-decoration: underline;
 }
 
 /* YUI Overrides */
 
 .yui-navset .yui-nav {
-	border-color: #2a0;
+	border-color: #bcc;
 }
 
 .yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
-	background-color: #000;
-	color: #cfb;
-	border: 1px solid #cfb;
+	background-color: #123;
+	color: #7db;
+	border: 1px solid #7db;
 	border-bottom: 0;
 	background-image: url();
 }
 
 .yui-navset .yui-nav a:hover, .yui-navset .yui-nav a:focus {
-    background: #000 url();
+    background: #123 url();
     text-decoration: none;
 	
 }
 
 .yui-navset .yui-content {
-	background-color: #000;
-	border: 1px solid #2a0;
+	background-color: #123;
+	border: 1px solid #bcc;
 }
 
 .yui-navset .yui-nav .selected a, 
 .yui-navset .yui-nav .selected a:focus, 
 .yui-navset .yui-nav .selected a:hover, 
 .yui-navset .yui-nav .selected a em{
-    background: #000;
-    color: #2a0;
-	border-color: #2a0;
+    background: #123;
+    color: #bcc;
+	border-color: #bcc;
 }
 
 /* Recent Pages & Posts */
 
 .thread-container .post {
 	padding: 10px;
-	border: solid 1px #2a0;
+	border: solid 1px #bcc;
 	margin: 3px 0;
 }
 
 .thread-container .post .head {
 	background: none;
-	background-color: #000;
+	background-color: #123;
 	box-shadow: none;
-	border-bottom: dashed 1px #2a0;
+	border-bottom: dashed 1px #bcc;
 }
 
 /* Forum stuff */
@@ -415,105 +415,105 @@ table.wiki-content-table td {
 }
 
 .forum-group table tr.head td {
-	background-color: #000;
+	background-color: #123;
 }
 
 .forum-group table td {
-	border: 1px solid #2a0;
+	border: 1px solid #bcc;
 }
 
 .forum-category-box .description-block {
-	border: 1px dashed #2a0;
-	background-color: #000;
+	border: 1px dashed #bcc;
+	background-color: #123;
 }
 
 .forum-category-box .description-block .statistics {
-	color: #2a0;
+	color: #bcc;
 }
 
 .forum-group div.head {
-	background-color: #000;
-	color: #2a0;
-	border: 1px solid #2a0;
+	background-color: #123;
+	color: #bcc;
+	border: 1px solid #bcc;
 }
 
 div.new-post a {
-	background-color: #000;
-	border: 1px solid #2a0;
+	background-color: #123;
+	border: 1px solid #bcc;
 }
 
 .forum-category-box table {
 	border-collapse: collapse;
-	border: solid 1px #2a0;
+	border: solid 1px #bcc;
 }
 
 .forum-category-box table tr.head td {
-	background-color: #000;
+	background-color: #123;
 }
 
 .forum-category-box table td {
-	border: 1px solid #2a0;
+	border: 1px solid #bcc;
 }
 
 .forum-category-box table td.name .description {
-	color: #2a0;
+	color: #bcc;
 }
 
 .forum-thread-box .description-block {
-	border: 1px dashed #2a0;
-	background-color: #000;
+	border: 1px dashed #bcc;
+	background-color: #123;
 	box-shadow: none;
 }
 
 .forum-thread-box .description-block .head {
-	color: #2a0;
+	color: #bcc;
 }
 
 .forum-thread-box .description-block .statistics {
-	color: #2a0;
+	color: #bcc;
 }
 
 .thread-container .post .long .changes {
-	color: #2a0;
+	color: #bcc;
 }
 
 .thread-container .post .long .changes a {
-	color: #cfb;
+	color: #7db;
 }
 
 .thread-container .post .options a {
-	color: #cfb;
+	color: #7db;
 }
 
 .thread-container .post .long .revisions table tr td {
-	background-color: #000;
-	border: dashed 1px #2a0;
+	background-color: #123;
+	border: dashed 1px #bcc;
 }
 
 .thread-container .post .long .revisions table tr.active td {
-	background-color: #000;
-	border: dashed 1px #2a0;
+	background-color: #123;
+	border: dashed 1px #bcc;
 }
 
 /* Modal Window */
 
 .owindow {
-	background-color: #000;
-	border: 1px solid #2a0;
+	background-color: #123;
+	border: 1px solid #bcc;
 }
 
 .owindow .title {
-	background-color: #000;
+	background-color: #123;
 }
 
 .owindow .button-bar a {
-	background-color: #000;
-	color: #cfb;
-	border: 1px solid #cfb;
+	background-color: #123;
+	color: #7db;
+	border: 1px solid #7db;
 }
 
 .owindow .button-bar a:hover {
-	background-color: #000;
-	color: #cfb;
+	background-color: #123;
+	color: #7db;
 	text-decoration: underline;
 }

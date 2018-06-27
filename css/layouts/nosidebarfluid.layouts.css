@@ -1,0 +1,19 @@
+#side-bar {
+	display:none !important;
+}
+#main-content { 
+	margin: 0 20px !important;
+	padding: 0 !important;
+}
+
+#header, #top-bar {
+	max-width: none;
+}
+#content-wrap {
+	max-height: none;
+	max-width: none;
+}
+#footer {
+	display: none !important;
+	visibility: hidden;
+}

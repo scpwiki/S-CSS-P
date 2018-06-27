@@ -14,9 +14,9 @@
 	"content_scripts": [
 		{
 		"matches": ["http://*.scp-wiki.net/*","http://scp-wiki.wikidot.com/*","https://*.scp-wiki.net/*","https://scp-wiki.wikidot.com/*", "http://scpnet.org/*"],
-		"js": ["main.js"],
+		"js": ["main.js", "options.js"],
 		"all_frames": true,
-		"run_at": "document_idle"
+		"run_at": "document_end"
 		}
 	],
 	"web_accessible_resources": ["/css/*", "/img/*"],

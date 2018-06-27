@@ -24,3 +24,21 @@ chrome.storage.sync.get(['activeLogo'], function (result) {
 	style3.href = chrome.extension.getURL('css/images/' + logocss + '.images.css');
 	document.head.appendChild(style3);
 });
+
+chrome.storage.sync.get(['activeFont'], function (result) {
+	var fontcss = result.activeFont;
+	var style4 = document.createElement('link');
+	style4.rel = 'stylesheet';
+	style4.type = 'text/css';
+	style4.href = chrome.extension.getURL('css/fonts/' + fontcss + '.fonts.css');
+	document.head.appendChild(style4);
+});
+
+chrome.storage.sync.get(['activeRating'], function (result) {
+	var ratingcss = result.activeRating;
+	var style5 = document.createElement('link');
+	style5.rel = 'stylesheet';
+	style5.type = 'text/css';
+	style5.href = chrome.extension.getURL('css/ratings/' + ratingcss + '.ratings.css');
+	document.head.appendChild(style5);
+});

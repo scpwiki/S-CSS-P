@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&subset=latin-ext');
+
+body {
+font-family: "Source Code Pro", "Courier New", monospace;
+}
+
+p {
+font-family: "Source Code Pro", "Courier New", monospace;
+}
+
+select {
+	font-family: "Source Code Pro", "Courier New", monospace;
+}
+
+input {
+	font-family: "Source Code Pro", "Courier New", monospace;
+}
+
+#header h1 a {
+	font-family: "Source Code Pro", "Courier New", monospace;
+}
+	
+#header h2 span {
+	font-family: "Source Code Pro", "Courier New", monospace;
+}
+
+#search-top-box-input {
+	font-family: "Source Code Pro", "Courier New", monospace;
+}
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+	font-family: "Source Code Pro", "Courier New", monospace;
+}
+
+#search-top-box-form input[type=submit] {
+	font-family: "Source Code Pro", "Courier New", monospace;
+}
+
+.interwiki__title {
+	font-family: "Source Code Pro", "Courier New", monospace;
+}
+
+.interwiki__entry a, .interwiki__entry a:visited {
+	font-family: "Source Code Pro", "Courier New", monospace;
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise');
+
+body {
+font-family: 'Waiting for the Sunrise', cursive;
+font-size: large;
+}
+
+p {
+font-family: 'Waiting for the Sunrise', cursive;
+font-size: x-large;
+}
+
+select {
+	font-family: 'Waiting for the Sunrise', cursive;
+}
+
+input {
+	font-family: 'Waiting for the Sunrise', cursive;
+}
+
+#header h1 a {
+	font-family: 'Waiting for the Sunrise', cursive;
+}
+	
+#header h2 span {
+	font-family: 'Waiting for the Sunrise', cursive;
+}
+
+#search-top-box-input {
+	font-family: 'Waiting for the Sunrise', cursive;
+}
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+	font-family: 'Waiting for the Sunrise', cursive;
+}
+
+#search-top-box-form input[type=submit] {
+	font-family: 'Waiting for the Sunrise', cursive;
+}
+
+.interwiki__title {
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-size: large;
+}
+
+.interwiki__entry a, .interwiki__entry a:visited {
+	font-family: 'Waiting for the Sunrise', cursive;
+}

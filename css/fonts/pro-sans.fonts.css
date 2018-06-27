@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&subset=latin-ext');
+
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+p {
+font-family: 'Roboto', sans-serif;
+}
+
+select {
+	font-family: 'Roboto', sans-serif;
+}
+
+input {
+	font-family: 'Roboto', sans-serif;
+}
+
+#header h1 a {
+	font-family: 'Roboto', sans-serif;
+}
+	
+#header h2 span {
+	font-family: 'Roboto', sans-serif;
+}
+
+#search-top-box-input {
+	font-family: 'Roboto', sans-serif;
+}
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+	font-family: 'Roboto', sans-serif;
+}
+
+#search-top-box-form input[type=submit] {
+	font-family: 'Roboto', sans-serif;
+}
+
+.interwiki__title {
+	font-family: 'Roboto', sans-serif;
+}
+
+.interwiki__entry a, .interwiki__entry a:visited {
+	font-family: 'Roboto', sans-serif;
+}
