@@ -131,7 +131,7 @@ background: url()
 }
 
 #side-bar .side-block {
-	background: transparent !important;
+	background: #421 !important;
 	border: 1px solid #985;
 }
 
@@ -300,6 +300,12 @@ table.wiki-content-table td {
 }
 
 /* Interwiki IFrame */
+
+/* Interwiki IFrame */
+
+iframe.scpnet-interwiki-frame {
+	height: auto;
+}
 
 .international-entry:nth-child(even), .alternate:nth-child(even) {
 	background-color: transparent;

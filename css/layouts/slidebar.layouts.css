@@ -94,3 +94,7 @@ div#side-bar
   {
     display: none;
   }
+  
+  #main-content {
+	  margin: 0 2em;
+  }
