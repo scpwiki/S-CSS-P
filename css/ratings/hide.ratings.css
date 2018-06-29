@@ -5,3 +5,7 @@
 .page-rate-widget-box {
 	display: none !important;
 }
+
+#action-area div div.page-rate-widget-box { /* Show a rating box if Rate is chosen from the bottom of the page. */
+	display: inline-block !important;
+}

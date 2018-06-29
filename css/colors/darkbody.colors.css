@@ -177,6 +177,7 @@ iframe.scpnet-interwiki-frame {
 	background: #DCDCDC;
 	border: 1px solid #2F4F4F;
     box-shadow: 0 2px 6px rgba(32,32,32,1) !important;
+	padding: 5px 0;
 }
 
 .interwiki__title {

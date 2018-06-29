@@ -296,6 +296,52 @@
   {
     display: none;
   }
+  
+  /* Interwiki IFrame */
+
+iframe.scpnet-interwiki-frame {
+	height: auto;
+}
+
+.international-entry:nth-child(even), .alternate:nth-child(even) {
+	background-color: transparent;
+	border-top: solid 1px #666;
+	border-bottom: solid 1px #666;
+}
+
+.interwiki {
+	border: none;
+	background: transparent;
+	width: auto !important;
+}
+
+.interwiki__title {
+color: #fff;
+    font-weight: bold;
+    font-size: 11pt;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.interwiki__entry {
+	border-bottom: 1px solid #666;
+}
+
+.interwiki__entry a {
+	color: #fff;
+	line-height: 2em;
+}
+
+.interwiki__entry a:hover {
+	text-decoration: none;
+}
+
+.interwiki__entry:before {
+	content: "" !important;
+	margin: 0 !important;
+}
 
   div#main-content
   {
