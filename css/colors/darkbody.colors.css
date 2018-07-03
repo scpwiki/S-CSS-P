@@ -59,7 +59,7 @@ div#container-wrap {
 #search-top-box-form input[type=submit]:focus {
     border: solid 1px #2F4F4F;
     color: #fff;
-    text-shadow: 0 0 1px rgba(255,255,255,.25)
+    text-shadow: 0 0 1px rgba(255,255,255,.25);
     background-color: #708090;
     background: linear-gradient(to bottom, #778899,#708090,#2F4F4F);
     box-shadow: 0 1px 3px rgba(0,0,0,.8);
@@ -94,7 +94,6 @@ div#container-wrap {
     color: #708090;
     text-shadow: 1px 1px 1px #000000;
     text-shadow: 1px 1px 1px rgba(0,0,0,.8);}
-}
  
 #top-bar a {
     color: #C0C0C0;

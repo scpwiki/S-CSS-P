@@ -470,9 +470,6 @@ color: #191919;
 }
     /* ------------- */
 
-
-}
-
 /* ------------------------------------------------------------- */
 
 
@@ -488,7 +485,7 @@ color: #191919;
 
 /* in the future, filter(image-URL, filter-functions) can be used for backgrounds - when it's implemented in browsers */
 
-@  -moz-document regexp("https?:\/\/(www\.scp-wiki\.net|scp-wiki\.wikidot\.com)\/scpfmmdbc-hub")
+@-moz-document regexp("https?:\/\/(www\.scp-wiki\.net|scp-wiki\.wikidot\.com)\/scpfmmdbc-hub")
   {
     #page-content > div: before {
     content: " ";

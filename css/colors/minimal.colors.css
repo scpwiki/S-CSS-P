@@ -352,12 +352,12 @@ color: #fff;
     padding: 20px;
     text-align: justify;
   }
-@  media screen and (max-width:737px)
-  {
+
+@media screen and (max-width:737px)  {
     div#main-content{
         padding: 0 10px !important;
-    box-sizing: border-box;
-  }
+		box-sizing: border-box;
+	}
 }
 
 #page-title,#page-title *
