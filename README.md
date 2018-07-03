@@ -1,7 +1,7 @@
 # S-CSS-P
 *A stylesheet picker for The SCP Wiki.*
 
-##Contributing
+## Contributing
 
 There are five available types of stylesheets to build:
 
