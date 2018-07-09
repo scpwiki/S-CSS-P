@@ -304,7 +304,7 @@ table.wiki-content-table td {
 /* Interwiki IFrame */
 
 iframe.scpnet-interwiki-frame {
-	height: auto;
+	height: 300px;
 }
 
 .international-entry:nth-child(even), .alternate:nth-child(even) {
@@ -318,6 +318,7 @@ iframe.scpnet-interwiki-frame {
 	background: transparent;
 	box-shadow: none;
 	padding: 2px 0;
+	width: auto;
 }
 
 .interwiki__title {
