@@ -2762,7 +2762,7 @@ li,p
 
 #header,#top-bar
 {
-  width:90%;
+  /* width:90%; - Doesn't play nice with multiple fonts. Let it inherit (100%). */
   max-width:980px;
   margin:0 auto;
 }
