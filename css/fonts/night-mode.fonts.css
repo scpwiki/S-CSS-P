@@ -10,3 +10,8 @@
   {
     font-family: "Junction", "Fira Sans", "DejaVu Sans Condensed", verdana, arial, helvetica, sans-serif !important;
   }
+  
+  .interwiki { 
+	font-family: "Fira Sans", "DejaVu Sans Condensed", verdana, arial, helvetica, sans-serif !important; 
+	font-size: 1em !important;
+  }

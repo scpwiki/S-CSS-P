@@ -619,3 +619,19 @@ color: #191919;
     filter: invert(88.5%);
   }
 }
+
+/* New code follows - bluesoul */
+
+.interwiki {
+	background-color: #191919 !important;
+	border: 1px solid #808080 !important;
+}
+
+.interwiki__title { 
+	color: #808080 !important;
+	border-bottom: solid 1px #808080 !important;
+ }
+
+.interwiki__entry a {
+	color: #942828 !important;
+}
