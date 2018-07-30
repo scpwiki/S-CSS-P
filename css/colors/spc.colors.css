@@ -92,11 +92,12 @@ div#container-wrap {
     color: #0b65c0;
 }
 
-.interwiki_title {
+.interwiki__title {
     color: #0b65c0;
+    border-bottom: solid 1px #0e7dcd;
 }
 
-.interwiki_entry a {
+.interwiki__entry a {
     color: #0b65c0;
 }
 
@@ -183,4 +184,10 @@ h1, #page-title {
     color: #0b2447;
     background-color: #132639;
     background: linear-gradient(to bottom, #2373cd,#319ec2,#183291);
+}
+
+/* Interwiki - bluesoul */
+
+.interwiki__entry:before {
+	color: #0b65c0;
 }
