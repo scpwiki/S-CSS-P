@@ -31,3 +31,7 @@ The files that drive the extension are:
 * `options.html` - This is static so if you add a stylesheet, you need to add a corresponding option line here. The extension is not smart enough to do it dynamically and probably won't ever be due to an interest in keeping it small and lightweight.
 * `options.js` - This handles the loading and saving of preferences via the `chrome.storage.sync.get/set` API.
 * `main.js` - This handles the injection of the stylesheets into the bottom of the `head` so they cascade correctly.
+
+## Overriding S-CSS-P
+
+If you have a page that contains custom CSS and would like to alert users of S-CSS-P that they should consider disabling the extension, please edit the slug of your page into http://scp-wiki.net/component:s-css-p in the code block. This is not yet implemented but the next major milestone will include this capability.
