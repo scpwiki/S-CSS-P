@@ -11,7 +11,7 @@ color:#bcc;
 
 }
 
-a {	color: #7db }
+a, a:visited {	color: #7db }
 
 blockquote {
 	border: 1px dashed #bcc;

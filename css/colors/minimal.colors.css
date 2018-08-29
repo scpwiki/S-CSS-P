@@ -9,7 +9,7 @@
     background: rgb(240,240,240);
   }
 
-  a
+  a, a:visited
   {
     color: #903000;
   }

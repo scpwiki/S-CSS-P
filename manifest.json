@@ -1,6 +1,6 @@
   {
     "name": "S-CSS-P",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "description": "A stylesheet picker for The SCP Wiki",
     "manifest_version": 2,
 	"permissions": [
