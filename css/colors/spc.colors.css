@@ -103,7 +103,7 @@ div#container-wrap {
 
 /* LINKS */
 
-a {
+a, a:visited, #side-bar a:visited {
     color: #0c499c;
     text-decoration: none;
     background: transparent;

@@ -5,7 +5,7 @@ h1, #page-title {
 #page-title {
     border-color: #bbb;
 }
-a, a:visited {
+a, a:visited, #side-bar a:visited {
     color: #2F4F4F;
     text-decoration: none;
     background: transparent;

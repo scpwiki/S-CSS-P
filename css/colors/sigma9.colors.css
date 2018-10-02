@@ -27,7 +27,7 @@ blockquote
   background-color:#f4f4f4;
 }
 
-a, a:visited
+a, a:visited, #side-bar a:visited
 {
   color:#b01;
 }
