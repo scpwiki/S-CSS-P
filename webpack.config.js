@@ -3,6 +3,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ExtensionManifestPlugin = require("webpack-extension-manifest-plugin");
+const FileManagerPlugin = require("filemanager-webpack-plugin");
 
 const pkg = require("./package.json");
 const baseManifest = require("./src/manifest.json");
@@ -19,12 +20,12 @@ module.exports = {
   module: {
     rules: [
       { test: /\.js$/, use: "babel-loader" },
-      { test: /\.css$/, use: [ "css-loader", "postcss-loader" ] },
+      { test: /\.css$/, use: ["css-loader", "postcss-loader"] },
       { test: /\.png$/, use: "file-loader" }
     ]
   },
   resolve: {
-    extensions: [ ".js" ],
+    extensions: [".js"],
     alias: { "@": path.resolve(__dirname, "./src") }
   },
   plugins: [
@@ -36,7 +37,7 @@ module.exports = {
       chunks: ["options"],
       meta: { viewport: "width=device-width, initial-scale=1" },
       manifest: "manifest.json",
-      hash: true
+      cache: false
     }),
     new CopyWebpackPlugin({
       patterns: [
@@ -48,6 +49,14 @@ module.exports = {
       config: {
         base: baseManifest,
         extend: { version: pkg.version }
+      }
+    }),
+    new FileManagerPlugin({
+      context: "./dist",
+      events: {
+        onEnd: {
+          archive: [ { source: "**/*", destination: "s-css-p.zip" } ]
+        }
       }
     })
   ]

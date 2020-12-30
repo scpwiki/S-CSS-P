@@ -1,84 +1,78 @@
-// Saves options to chrome.storage
-function save_options() {
-  var layout = document.getElementById('layout').value;
-  var color = document.getElementById('color').value;
-  var logo = document.getElementById('logo').value;
-  var font = document.getElementById('font').value;
-  var rating = document.getElementById('rating').value;
-  chrome.storage.sync.set({
-    activeLayout: layout,
-    activeColor: color,
-    activeLogo: logo,
-    activeFont: font,
-    activeRating: rating
-  }, function() {
-    // Update status to let user know options were saved.
-    var status = document.getElementById('status');
-    status.textContent = 'Options saved.';
-    setTimeout(function() {
-      status.textContent = '';
-    }, 750);
-  });
+import { browser } from "webextension-polyfill-ts";
+
+document.addEventListener('DOMContentLoaded', restore_options);
+
+const saveButton = document.getElementById('save');
+if (saveButton) {
+  saveButton.addEventListener('click', save_options);
 }
 
-// Restores select box and checkbox state using the preferences
-// stored in chrome.storage.
-function restore_options() {
-  chrome.storage.sync.get({
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.layout').addEventListener(
+    'change', () => updateImage('layout')
+  );
+  document.querySelector('.color').addEventListener(
+    'change', () => updateImage('color')
+  );
+  document.querySelector('.logo').addEventListener(
+    'change', () => updateImage('logo')
+  );
+  document.querySelector('.font').addEventListener(
+    'change', () => updateImage('font')
+  );
+  document.querySelector('.rating').addEventListener(
+    'change', () => updateImage('rating')
+  );
+});
+
+async function save_options () {
+  /**
+   * Saves options to chrome.storage
+   */
+  const activeLayout = document.getElementById('layout').value;
+  const activeColor = document.getElementById('color').value;
+  const activeLogo = document.getElementById('logo').value;
+  const activeFont = document.getElementById('font').value;
+  const activeRating = document.getElementById('rating').value;
+  await browser.storage.sync.set(
+    { activeLayout, activeColor, activeLogo, activeFont, activeRating }
+  );
+  // Update status to let user know options were saved.
+  const status = document.getElementById('status');
+  status.textContent = 'Options saved.';
+  setTimeout(() => status.textContent = '', 750);
+}
+
+async function restore_options () {
+  /**
+   * Restores select box and checkbox state using the preferences
+   * stored in chrome.storage.
+   */
+  const items = await browser.storage.sync.get({
     activeLayout: 'none',
     activeColor: 'none',
     activeLogo: 'none',
     activeFont: 'none',
     activeRating: 'none'
-  }, function(items) {
-    document.getElementById('layout').value = items.activeLayout;
-    document.getElementById('color').value = items.activeColor;
-    document.getElementById('logo').value = items.activeLogo;
-    document.getElementById('font').value = items.activeFont;
-    document.getElementById('rating').value = items.activeRating;
-	changeImgLayout();
-	changeImgColor();
-	changeImgLogo();
-	changeImgFont();
-	changeImgRating();
   });
-}
-document.addEventListener('DOMContentLoaded', restore_options);
-var save = document.getElementById('save')
-if(save) { 
-addEventListener('click',
-    save_options);
-}
-	
-function changeImgLayout() {
-	var layout = document.getElementById("layout").value;
-	document.getElementById("select-layout").src = "/img/layout/" + layout + ".png";
-}
-
-function changeImgColor() {
-	var color = document.getElementById("color").value;
-	document.getElementById("select-color").src = "/img/color/" + color + ".png";
+  document.getElementById('layout').value = items.activeLayout;
+  document.getElementById('color').value = items.activeColor;
+  document.getElementById('logo').value = items.activeLogo;
+  document.getElementById('font').value = items.activeFont;
+  document.getElementById('rating').value = items.activeRating;
+  updateImage('layout');
+  updateImage('color');
+  updateImage('logo');
+  updateImage('font');
+  updateImage('rating');
 }
 
-function changeImgLogo() {
-	var logo = document.getElementById("logo").value;
-	document.getElementById("select-logo").src = "/img/logo/" + logo + ".png";
+function updateImage (type) {
+  /**
+   * Updates the image preview of the specified option.
+   *
+   * @param {string} type: The name of the option to preview.
+   */
+  const value = document.getElementById(type).value;
+  document.getElementById(`select-${type}`).src = `/img/${type}/${value}.png`;
 }
-
-function changeImgFont() {
-	var font = document.getElementById("font").value;
-	document.getElementById("select-font").src = "/img/font/" + font + ".png";
-}
-
-function changeImgRating() {
-	var rating = document.getElementById("rating").value;
-	document.getElementById("select-rating").src = "/img/rating/" + rating + ".png";
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('.layout').addEventListener('change', changeImgLayout);
-  document.querySelector('.color').addEventListener('change', changeImgColor);
-  document.querySelector('.logo').addEventListener('change', changeImgLogo);
-  document.querySelector('.font').addEventListener('change', changeImgFont);
-  document.querySelector('.rating').addEventListener('change', changeImgRating);
-});

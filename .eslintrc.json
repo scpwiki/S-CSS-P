@@ -14,6 +14,7 @@
         "no-unused-vars": [
             "error", { "argsIgnorePattern": "^_" }
         ],
+        "quotes": "off",
         "semi": ["error", "always"]
     }
 }
