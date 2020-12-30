@@ -19,12 +19,12 @@ module.exports = {
   module: {
     rules: [
       { test: /\.js$/, use: "babel-loader" },
-      { test: /\.css$/, use: [ "css-loader", "postcss-loader" ] },
+      { test: /\.css$/, use: ["css-loader", "postcss-loader"] },
       { test: /\.png$/, use: "file-loader" }
     ]
   },
   resolve: {
-    extensions: [ ".js" ],
+    extensions: [".js"],
     alias: { "@": path.resolve(__dirname, "./src") }
   },
   plugins: [
