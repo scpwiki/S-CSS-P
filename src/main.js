@@ -1,40 +1,25 @@
 import { browser } from "webextension-polyfill-ts";
 
-applyCss();
+["layout", "color", "logo", "font", "rating"].forEach(addStyle);
 
-async function applyCss () {
-  const { activeLayout } = await browser.storage.sync.get('activeLayout');
+async function addStyle (type) {
+  /**
+   * Adds a CSS stylesheet of the specified type to the page. Gets the value of
+   * the stylesheet from the synchronised extension storage.
+   *
+   * @param {string} type: The type of stylesheet to add.
+   */
+  const [dir, keyName] = {
+    layout: ["layouts", "activeLayout"],
+    color: ["colors", "activeColor"],
+    logo: ["images", "activeLogo"],
+    font: ["fonts", "activeFont"],
+    rating: ["ratings", "activeRating"],
+  }[type];
+
+  const { value } = await browser.storage.sync.get(keyName);
   const style = document.createElement('link');
   style.rel = 'stylesheet';
   style.type = 'text/css';
-  style.href = browser.runtime.getURL(`/css/layouts/${activeLayout}.layouts.css`);
-  document.head.appendChild(style);
-
-  const { activeColor } = await browser.storage.sync.get('activeColor');
-  const style2 = document.createElement('link');
-  style2.rel = 'stylesheet';
-  style2.type = 'text/css';
-  style2.href = browser.runtime.getURL(`/css/colors/${activeColor}.colors.css`);
-  document.head.appendChild(style2);
-
-  const { activeLogo } = await browser.storage.sync.get('activeLogo');
-  const style3 = document.createElement('link');
-  style3.rel = 'stylesheet';
-  style3.type = 'text/css';
-  style3.href = browser.runtime.getURL(`css/images/${activeLogo}.images.css`);
-  document.head.appendChild(style3);
-
-  const { activeFont } = await browser.storage.sync.get('activeFont');
-  const style4 = document.createElement('link');
-  style4.rel = 'stylesheet';
-  style4.type = 'text/css';
-  style4.href = browser.runtime.getURL(`css/fonts/${activeFont}.fonts.css`);
-  document.head.appendChild(style4);
-
-  const { activeRating } = await browser.storage.sync.get('activeRating');
-  const style5 = document.createElement('link');
-  style5.rel = 'stylesheet';
-  style5.type = 'text/css';
-  style5.href = browser.runtime.getURL(`css/ratings/${activeRating}.ratings.css`);
-  document.head.appendChild(style5);
+  style.href = browser.runtime.getURL(`/css/${dir}/${value}.${dir}.css`);
 }
