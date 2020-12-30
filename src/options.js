@@ -7,12 +7,22 @@ if (save) {
   addEventListener('click', save_options);
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('.layout').addEventListener('change', changeImgLayout);
-  document.querySelector('.color').addEventListener('change', changeImgColor);
-  document.querySelector('.logo').addEventListener('change', changeImgLogo);
-  document.querySelector('.font').addEventListener('change', changeImgFont);
-  document.querySelector('.rating').addEventListener('change', changeImgRating);
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.layout').addEventListener(
+    'change', () => updateImage('layout')
+  );
+  document.querySelector('.color').addEventListener(
+    'change', () => updateImage('color')
+  );
+  document.querySelector('.logo').addEventListener(
+    'change', () => updateImage('logo')
+  );
+  document.querySelector('.font').addEventListener(
+    'change', () => updateImage('font')
+  );
+  document.querySelector('.rating').addEventListener(
+    'change', () => updateImage('rating')
+  );
 });
 
 async function save_options () {
@@ -50,34 +60,19 @@ async function restore_options () {
   document.getElementById('logo').value = items.activeLogo;
   document.getElementById('font').value = items.activeFont;
   document.getElementById('rating').value = items.activeRating;
-  changeImgLayout();
-  changeImgColor();
-  changeImgLogo();
-  changeImgFont();
-  changeImgRating();
+  updateImage('layout');
+  updateImage('color');
+  updateImage('logo');
+  updateImage('font');
+  updateImage('rating');
 }
 
-function changeImgLayout () {
-  const layout = document.getElementById("layout").value;
-  document.getElementById("select-layout").src = `/img/layout/${layout}.png`;
-}
-
-function changeImgColor () {
-  const color = document.getElementById("color").value;
-  document.getElementById("select-color").src = `/img/color/${color}.png`;
-}
-
-function changeImgLogo () {
-  const logo = document.getElementById("logo").value;
-  document.getElementById("select-logo").src = `/img/logo/${logo}.png`;
-}
-
-function changeImgFont () {
-  const font = document.getElementById("font").value;
-  document.getElementById("select-font").src = `/img/font/${font}.png`;
-}
-
-function changeImgRating () {
-  const rating = document.getElementById("rating").value;
-  document.getElementById("select-rating").src = `/img/rating/${rating}.png`;
+function updateImage (type) {
+  /**
+   * Updates the image preview of the specified option.
+   *
+   * @param {string} type: The name of the option to preview.
+   */
+  const value = document.getElementById(type).value;
+  document.getElementById(`select-${type}`).src = `/img/${type}/${value}.png`;
 }
