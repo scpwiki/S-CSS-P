@@ -1,0 +1,19 @@
+{
+    "env": {
+        "es2020": true,
+        "browser": true
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "sourceType": "module",
+        "lib": ["es2020", "dom", "dom.iterable"]
+    },
+    "rules": {
+        "no-unused-vars": [
+            "error", { "argsIgnorePattern": "^_" }
+        ],
+        "semi": ["error", "always"]
+    }
+}
