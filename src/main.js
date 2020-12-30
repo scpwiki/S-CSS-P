@@ -17,9 +17,11 @@ async function addStyle (type) {
     rating: ["ratings", "activeRating"],
   }[type];
 
-  const { value } = await browser.storage.sync.get(keyName);
+  const value = (await browser.storage.sync.get(keyName))[keyName];
   const style = document.createElement('link');
   style.rel = 'stylesheet';
   style.type = 'text/css';
   style.href = browser.runtime.getURL(`/css/${dir}/${value}.${dir}.css`);
+
+  document.head.appendChild(style);
 }
