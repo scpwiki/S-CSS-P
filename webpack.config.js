@@ -36,7 +36,8 @@ module.exports = {
       filename: "options.html",
       chunks: ["options"],
       meta: { viewport: "width=device-width, initial-scale=1" },
-      manifest: "manifest.json"
+      manifest: "manifest.json",
+      cache: false
     }),
     new CopyWebpackPlugin({
       patterns: [

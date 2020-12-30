@@ -3,8 +3,8 @@
   "version": "1.2.0",
   "scripts": {
     "fix": "standardx --fix",
-    "dev": "NODE_ENV=development webpack --mode development --config webpack.config.js --watch",
-    "build": "webpack --config webpack.config.js"
+    "dev": "NODE_ENV=development webpack --mode development --config webpack.dev.js --watch",
+    "build": "webpack --mode production --config webpack.config.js"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -25,6 +25,7 @@
     "webextension-polyfill-ts": "^0.22.0",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.0",
-    "webpack-extension-manifest-plugin": "^0.6.0"
+    "webpack-extension-manifest-plugin": "^0.6.0",
+    "webpack-merge": "^5.7.3"
   }
 }
