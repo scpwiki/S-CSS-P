@@ -39,7 +39,10 @@ module.exports = {
       hash: true
     }),
     new CopyWebpackPlugin({
-      patterns: [ { from: "./src/img", to: "./img" } ]
+      patterns: [
+        { from: "./src/img", to: "./img" },
+        { from: "./src/css", to: "./css" }
+      ]
     }),
     new ExtensionManifestPlugin({
       config: {
