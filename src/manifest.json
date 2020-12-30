@@ -1,24 +1,14 @@
 {
     "name": "S-CSS-P",
-    "version": "1.2.0",
-    "description": "A stylesheet picker for The SCP Wiki",
+    "description": "A stylesheet picker for the SCP Wiki",
     "manifest_version": 2,
     "permissions": [
         "storage",
-        "http://scpwiki.com",
-        "http://www.scpwiki.com",
-        "http://*.scp-wiki.net/",
-        "http://scp-wiki.wikidot.com/",
-        "https://*.scp-wiki.net/",
-        "https://scp-wiki.wikidot.com/",
-        "http://scpnet.org/"
+        "*://scp-wiki.wikidot.com/*",
+        "*://*.scp-wiki.net/*",
+        "*://*.scpwiki.com/*",
+        "*://scpnet.org/*"
     ],
-    "applications": {
-        "gecko": {
-            "id": "s-css-p@o5command.com",
-            "strict_min_version": "42.0"
-        }
-    },
     "content_scripts": [
         {
             "matches": [
@@ -28,7 +18,6 @@
                 "*://scpnet.org/*"
             ],
             "js": [
-                "browser-polyfill.js",
                 "main.js",
                 "options.js"
             ],
@@ -36,6 +25,12 @@
             "run_at": "document_end"
         }
     ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "s-css-p@o5command.com",
+            "strict_min_version": "42.0"
+        }
+    },
     "web_accessible_resources": [
         "/css/*",
         "/img/*"
@@ -45,8 +40,8 @@
         "open_in_tab": true
     },
     "icons": {
-        "16": "icon16.png",
-        "48": "icon48.png",
-        "128": "icon128.png"
+        "16": "img/icon16.png",
+        "48": "img/icon48.png",
+        "128": "img/icon128.png"
     }
 }
