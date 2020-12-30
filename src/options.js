@@ -2,9 +2,9 @@ import { browser } from "webextension-polyfill-ts";
 
 document.addEventListener('DOMContentLoaded', restore_options);
 
-const save = document.getElementById('save');
-if (save) {
-  addEventListener('click', save_options);
+const saveButton = document.getElementById('save');
+if (saveButton) {
+  saveButton.addEventListener('click', save_options);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
