@@ -1,0 +1,8 @@
+{
+  "name": "s-css-p",
+  "version": "0.0.0",
+  "devDependencies": {
+    "eslint": "^7.16.0",
+    "webextension-polyfill": "^0.7.0"
+  }
+}
