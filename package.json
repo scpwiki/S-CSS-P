@@ -21,7 +21,7 @@
     "postcss-loader": "^4.1.0",
     "standardx": "^7.0.0",
     "style-loader": "^2.0.0",
-    "webextension-polyfill": "^0.7.0",
+    "webextension-polyfill-ts": "^0.22.0",
     "webpack": "^5.11.1",
     "webpack-cli": "^4.3.0",
     "webpack-extension-manifest-plugin": "^0.6.0"

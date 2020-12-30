@@ -1,3 +1,4 @@
+import { browser } from "webextension-polyfill-ts";
 
 document.addEventListener('DOMContentLoaded', restore_options);
 
@@ -14,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.rating').addEventListener('change', changeImgRating);
 });
 
-function save_options () {
+async function save_options () {
   /**
    * Saves options to chrome.storage
    */
@@ -23,40 +24,37 @@ function save_options () {
   const activeLogo = document.getElementById('logo').value;
   const activeFont = document.getElementById('font').value;
   const activeRating = document.getElementById('rating').value;
-  chrome.storage.sync.set(
-    { activeLayout, activeColor, activeLogo, activeFont, activeRating },
-    function () {
-      // Update status to let user know options were saved.
-      const status = document.getElementById('status');
-      status.textContent = 'Options saved.';
-      setTimeout(() => status.textContent = '', 750);
-    }
+  await browser.storage.sync.set(
+    { activeLayout, activeColor, activeLogo, activeFont, activeRating }
   );
+  // Update status to let user know options were saved.
+  const status = document.getElementById('status');
+  status.textContent = 'Options saved.';
+  setTimeout(() => status.textContent = '', 750);
 }
 
-function restore_options () {
+async function restore_options () {
   /**
    * Restores select box and checkbox state using the preferences
    * stored in chrome.storage.
    */
-  chrome.storage.sync.get({
+  const items = await browser.storage.sync.get({
     activeLayout: 'none',
     activeColor: 'none',
     activeLogo: 'none',
     activeFont: 'none',
     activeRating: 'none'
-  }, function (items) {
-    document.getElementById('layout').value = items.activeLayout;
-    document.getElementById('color').value = items.activeColor;
-    document.getElementById('logo').value = items.activeLogo;
-    document.getElementById('font').value = items.activeFont;
-    document.getElementById('rating').value = items.activeRating;
-    changeImgLayout();
-    changeImgColor();
-    changeImgLogo();
-    changeImgFont();
-    changeImgRating();
   });
+  document.getElementById('layout').value = items.activeLayout;
+  document.getElementById('color').value = items.activeColor;
+  document.getElementById('logo').value = items.activeLogo;
+  document.getElementById('font').value = items.activeFont;
+  document.getElementById('rating').value = items.activeRating;
+  changeImgLayout();
+  changeImgColor();
+  changeImgLogo();
+  changeImgFont();
+  changeImgRating();
 }
 
 function changeImgLayout () {
